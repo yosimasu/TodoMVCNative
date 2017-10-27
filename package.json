@@ -1,0 +1,7 @@
+{
+  "name": "todomvc",
+  "private": true,
+	"devDependencies": {
+	  "lerna": "^2.2.0"
+	}
+}
