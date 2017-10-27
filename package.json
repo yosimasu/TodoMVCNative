@@ -1,6 +1,11 @@
 {
   "name": "todomvc",
   "private": true,
+  "scripts": {
+    "postinstall": "lerna bootstrap --scope TodoMVCUI",
+    "clean": "lerna clean --yes",
+    "start:ui": "cd ./apps/ui && yarn start"
+  },
 	"devDependencies": {
 	  "lerna": "2.4.0"
 	}

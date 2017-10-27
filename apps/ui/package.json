@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "storybook": "storybook start -p 7007 --reset-cache"
+    "start": "storybook start -p 7007 --reset-cache",
+    "test": "jest"
   },
   "dependencies": {
     "react": "15.4.2",
