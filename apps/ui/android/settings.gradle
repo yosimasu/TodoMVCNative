@@ -1,0 +1,3 @@
+rootProject.name = 'TodoMVCUI'
+
+include ':app'
