@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, Button } from 'react-native';
+import Styles from '../Styles';
 
 class Footer extends React.Component {
   render() {
@@ -12,12 +13,15 @@ class Footer extends React.Component {
     } = this.props;
 
     return (
-      <View>
-        <Text>{`activeCount: ${activeCount}`}</Text>
-        <Text>{`completedCount: ${completedCount}`}</Text>
-        <Text>{`filter: ${filter}`}</Text>
-        <Button onPress={onClearCompleted} title="onClearCompleted" />
-        <Button onPress={onShow} title="onShow" />
+      <View style={ Styles.footer }>
+
+        <Text>{`${activeCount} ` }{( activeCount > 1 ) ? "items" : "item" }  left </Text>
+        <View style={ Styles.footerSelecter }>
+          <Text style={(filter == 'all') ? Styles.footerSelectActive : null } >All</Text>
+          <Text style={(filter == 'active') ? Styles.footerSelectActive : null }>Active</Text>
+          <Text style={(filter == 'complete') ? Styles.footerSelectActive : null }>Complete</Text>
+        </View>
+        <Button title="Clear Completed" onPress={onClearCompleted}  />
       </View>
     );
   }

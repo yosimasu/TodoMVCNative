@@ -13,7 +13,7 @@ story.add('Required Props', () => {
   const props = {
     activeCount: 1,
     completedCount: 3,
-    filter: 'filter',
+    filter: 'all',
     onClearCompleted: action('onClearCompleted'),
     onShow: action('onShow'),
   };
