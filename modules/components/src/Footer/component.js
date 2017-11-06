@@ -14,14 +14,17 @@ class Footer extends React.Component {
 
     return (
       <View style={ Styles.footer }>
-
-        <Text>{`${activeCount} ` }{( activeCount > 1 ) ? "items" : "item" }  left </Text>
-        <View style={ Styles.footerSelecter }>
-          <Text style={(filter == 'all') ? Styles.footerSelectActive : null } >All</Text>
-          <Text style={(filter == 'active') ? Styles.footerSelectActive : null }>Active</Text>
-          <Text style={(filter == 'complete') ? Styles.footerSelectActive : null }>Complete</Text>
+        <View style={ Styles.footerItemsLeft }>
+          <Text>{`${activeCount} ` }{( activeCount > 1 ) ? "items" : "item" } left</Text>
         </View>
-        <Button title="Clear Completed" onPress={onClearCompleted}  />
+        <View style={ Styles.footerSelecter }>
+          <Text style={[Styles.footerSelecterItem, (filter == 'all') ? Styles.footerSelectActive : null] } >All</Text>
+          <Text style={[Styles.footerSelecterItem, (filter == 'active') ? Styles.footerSelectActive : null] }>Active</Text>
+          <Text style={[Styles.footerSelecterItem, (filter == 'complete') ? Styles.footerSelectActive : null] }>Complete</Text>
+        </View>
+        <View style={ Styles.footerClear }>
+          <Button title="Clear" onPress={ onClearCompleted } />
+        </View>
       </View>
     );
   }
