@@ -20,7 +20,7 @@ class Footer extends React.Component {
         <View style={ Styles.footerSelecter }>
           <Text style={[Styles.footerSelecterItem, (filter == 'all') ? Styles.footerSelectActive : null] } >All</Text>
           <Text style={[Styles.footerSelecterItem, (filter == 'active') ? Styles.footerSelectActive : null] }>Active</Text>
-          <Text style={[Styles.footerSelecterItem, (filter == 'complete') ? Styles.footerSelectActive : null] }>Complete</Text>
+          <Text style={[Styles.footerSelecterItem, (filter == 'completed') ? Styles.footerSelectActive : null] }>Complete</Text>
         </View>
         <View style={ Styles.footerClear }>
           <Button title="Clear" onPress={ onClearCompleted } />
