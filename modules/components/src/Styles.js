@@ -3,6 +3,12 @@ import { StyleSheet, Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
 const Styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    height: height,
+    width: width,
+  },
   header: {
     height: height * 0.05,
     borderBottomColor: "#CCC",
@@ -30,10 +36,9 @@ const Styles = StyleSheet.create({
 
   },
   footer: {
-    position: 'absolute',
+    position: 'relative',
     flexDirection: 'row',
     width: width,
-    //bottom: 0,
   },
   footerItemsLeft:{
     width: width * 0.2,
