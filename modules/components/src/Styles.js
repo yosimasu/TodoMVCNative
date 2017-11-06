@@ -12,6 +12,23 @@ const Styles = StyleSheet.create({
   addTodo:{
     height: height * 0.05,
   },
+  todoItem:{
+    position: 'relative',
+    height: height * 0.05,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderColor: '#CCC',
+    borderWidth: 0.5,
+  },
+  todoItemContent:{
+    width: width * 0.9,
+  },
+  todoItemComplete:{
+    textDecorationLine: 'line-through',
+  },
+  todoItemDelete:{
+
+  },
   footer: {
     position: 'absolute',
     flexDirection: 'row',
