@@ -7,7 +7,7 @@
     "start:ui": "cd ./apps/ui && yarn start",
     "start:app": "cd ./apps/app && yarn start --reset-cache"
   },
-	"devDependencies": {
-	  "lerna": "2.4.0"
-	}
+  "devDependencies": {
+    "lerna": "2.4.0"
+  }
 }
