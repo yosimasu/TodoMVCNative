@@ -3,6 +3,15 @@ import { StyleSheet, Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
 const Styles = StyleSheet.create({
+  header: {
+    height: height * 0.05,
+    borderBottomColor: "#CCC",
+    borderBottomWidth: 0.5,
+    borderBottomRightRadius: 5,
+  },
+  addTodo:{
+    height: height * 0.05,
+  },
   footer: {
     position: 'absolute',
     flexDirection: 'row',
@@ -23,7 +32,7 @@ const Styles = StyleSheet.create({
   },
   footerSelecterItem:{
     paddingLeft: 5,
-    paddingRight: 5,  
+    paddingRight: 5,
   },
   footerSelectActive: {
     borderWidth: 1,
